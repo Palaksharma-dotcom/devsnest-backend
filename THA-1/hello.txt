@@ -1,0 +1,16 @@
+HSET person name xyz
+HGET person name >>xyz
+HGETALL person >>"name" "xyz"
+
+HSET person age 15
+HGETALL person >>"name" "xyz" "age" "15"
+HDEL person age
+HEXISTS person name
+
+
+CREATE user fun WITH PASSWORD "password"
+CREATE DATABASE devs
+GRANT ALL PRIVILAGES ON DATABASE devs to fun 
+
+to select database:  \c <nameofdatabase>
+to view all database: \l 
